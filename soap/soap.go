@@ -75,7 +75,8 @@ Loop:
 				consumed = true
 			} else {
 				if err = d.DecodeElement(b.Content, &se); err != nil {
-					return err
+					// return err
+					fmt.Printf("Error parsing %+v", &se)
 				}
 
 				consumed = true
